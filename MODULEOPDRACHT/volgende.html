@@ -4,23 +4,27 @@
     <style>
         a {
   font-size: 17em;
+  color: rgb(113, 9, 9)
 }
     </style>
-    <title>Mijn eerste JS</title>
+    <title>Wat doe je!</title>
 </head>
 <body>
 
-    <a href="ambities.html">Wat doe je?</a>
+    <a href="ambities.html">GA TERUG!</a>
 
 
     <script>
-        let koptekst = document.querySelector("a");
-        alert(koptekst.innerHTML);
+        alert("Wat doe je?");
 
         alert("Er staat hier helemaal niks.");
 
-        koptekst.innerHTML = "GA TERUG!";
-        alert(koptekst.innerHTML);
+        alert("GA TERUG!");
+        setTimeout(function(){ alert("Waarom ben je hier nog?"); }, 8000);
+        setTimeout(function(){ alert("GA TERUG"); }, 9000);
+        setTimeout(function(){ alert("Ga terug"); }, 60000);
+        setTimeout(function(){ alert("Je word over 5 seconden terug gestuurd."); }, 65000);
+        setTimeout(function(){ window.location.href = "ambities.html"; }, 70000);
         
     </script>
 </body>
